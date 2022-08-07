@@ -1,0 +1,88 @@
+.Book {
+  width: 100%;
+  font-family: "Spartan", sans-serif;
+}
+
+.book_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.book_title > h1 {
+  margin-top: 120px;
+  font-size: 34px;
+  font-weight: 800;
+  color: white;
+}
+.book_title > p {
+  font-family: "Comfortaa", cursive;
+  color: #00ffff;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+  margin-top: 10px;
+}
+.book_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.book_container_left > img {
+  width: 100%;
+}
+
+.book_container_right {
+  flex-direction: column;
+  display: flex;
+}
+.book_container_right_inner {
+  background-color: #9ad7fa;
+  width: 340px;
+  margin-right: 30px;
+  height: 130px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.book_container_right_inner:hover {
+  transform: translatex(-3em);
+}
+.book_container_right_inner > h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 27px;
+}
+.book_container_right_inner > p {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.book_container_right_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book_container_right_button > button {
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #a6ffff;
+  border: none;
+  font-family: "Comfortaa";
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+}
+.book_container_right_button > button:hover {
+  transform: scale(1.2);
+  background-color: #00ffff;
+  cursor: pointer;
+}

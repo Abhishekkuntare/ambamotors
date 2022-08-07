@@ -1,0 +1,13 @@
+@media all and (max-width: 600px) {
+  .footer1_vertical_line {
+    margin-top: 100px;
+  }
+}
+@media all and (max-width: 450px) {
+  .footer_end > h1 {
+    width: 70%;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+  }
+}

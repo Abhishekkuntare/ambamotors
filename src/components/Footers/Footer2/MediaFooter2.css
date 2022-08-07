@@ -1,0 +1,22 @@
+@media all and (max-width: 874px) {
+  .Footer2_container {
+    flex-direction: column;
+  }
+  .footer2_container_left {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_container_right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer_container_right > p {
+    text-align: start;
+  }
+}

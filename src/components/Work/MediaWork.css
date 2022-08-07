@@ -1,0 +1,16 @@
+@media all and (max-width: 600px) {
+  .work__row1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .work_row1_left_inner > h1 {
+    text-align: center;
+  }
+
+  .work__row1_left > p {
+    text-align: center;
+  }
+  .work__row1_right {
+    margin-top: 60px;
+  }
+}

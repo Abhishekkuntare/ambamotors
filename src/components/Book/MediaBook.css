@@ -1,0 +1,34 @@
+@media all and (max-width: 1000px) {
+  .book_container {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 600px) {
+  .book_container_left > img {
+    width: 400px;
+  }
+  .book_container {
+    flex-direction: column;
+  }
+  .book_container_right_inner {
+    width: 315px;
+    height: 127px;
+    margin-right: 0;
+  }
+  .book_container_right_inner:hover {
+    background-color: #5abcf5;
+    transform: none;
+  }
+
+  .book_container_right_inner > h1 {
+    font-size: 23px;
+  }
+  .book_container_right_inner > p {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 400px) {
+  .book_container_left > img {
+    width: 320px;
+  }
+}

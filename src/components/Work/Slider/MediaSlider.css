@@ -1,0 +1,5 @@
+@media all and (max-width: 500px) {
+  .Slider2_name > h1 {
+    font-size: 18px;
+  }
+}

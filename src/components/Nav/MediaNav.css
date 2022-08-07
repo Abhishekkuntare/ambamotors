@@ -1,0 +1,34 @@
+@media all and (max-width: 600px) {
+  .nav {
+    justify-content: center;
+  }
+  .nav_right {
+    display: none;
+  }
+  .nav_left {
+    margin-left: 0px;
+  }
+  .nav_left > img {
+    width: 100px;
+  }
+  .nav_right_burger {
+    display: flex;
+    margin-right: 20px;
+    width: 40px;
+    margin-top: 20px;
+  }
+  .nav_right_search {
+    width: 60%;
+    background-color: transparent;
+    height: 30px;
+    display: flex;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-right: 20px;
+    color: white;
+    font-family: "Spartan";
+    outline: 1px solid #00ffff;
+    border: none;
+  }
+}

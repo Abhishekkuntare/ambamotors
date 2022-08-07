@@ -1,0 +1,44 @@
+.Footer3_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer_container_left_row {
+  display: flex;
+  align-items: center;
+}
+.footer_container_left_row > p {
+  color: white;
+  font-size: 12px;
+}
+.footer_container_left_row > h6 {
+  color: #00ffff;
+  font-size: 9px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+.footer3_container_left > p {
+  color: #00ffff;
+  font-size: 9px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.footer3_container_right {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.KeyboardArrowUp {
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 30px;
+  border: 2px solid rgb(0, 217, 255);
+}

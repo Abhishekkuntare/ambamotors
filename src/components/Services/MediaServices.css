@@ -1,0 +1,30 @@
+@media all and (max-width: 1300px) {
+  .Services {
+    height: 1232px;
+  }
+  @media all and (max-width: 932px) {
+    .Services {
+      height: 2192px;
+    }
+  }
+  @media all and (max-width: 425px) {
+    .services_titile_horizantal_line {
+      width: 12%;
+    }
+    .Services {
+      height: 2292px;
+    }
+    .Services_box_inner {
+      background-color: #06070f;
+      width: 300px;
+      height: 320px;
+      margin-left: 0;
+    }
+    .Services_box_inner > h1 {
+      font-size: 20px;
+    }
+    .Services_box_inner > p {
+      font-size: 10px;
+    }
+  }
+}
