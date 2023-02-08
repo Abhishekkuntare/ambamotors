@@ -15,4 +15,4 @@ const store = configureStore({
 });
 
 export default store;
-export const server = "https://ambamotors.onrender.com/api/v1";
+export const server = "https://ambamotors-backend.vercel.app/api/v1";
