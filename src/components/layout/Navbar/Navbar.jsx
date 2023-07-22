@@ -43,15 +43,15 @@ const Header = ({ isAuthenticated, user }) => {
       >
         <CgMenuRightAlt />
       </Button>
-      <Drawer size={"full"} isOpen={isOpen} onClose={onClose}>
+      <Drawer isOpen={isOpen} onClose={onClose}>
         <DrawerOverlay backdropFilter={"blur(10px)"} zIndex={1000} />
         <DrawerContent
-          backgroundImage={[
-            "url(https://cdnb.artstation.com/p/assets/images/images/008/555/507/large/cody-zimmerman-merc-amg-gt-45.jpg?1513535091)",
-            "url(https://cdnb.artstation.com/p/assets/images/images/007/639/003/large/darek-zabrocki-abandonedairport-shoot1-004-final-fixed-darekzabrocki.jpg?1507544597)",
-          ]}
+        // backgroundImage={[
+        //   "url(https://cdnb.artstation.com/p/assets/images/images/008/555/507/large/cody-zimmerman-merc-amg-gt-45.jpg?1513535091)",
+        //   "url(https://cdnb.artstation.com/p/assets/images/images/007/639/003/large/darek-zabrocki-abandonedairport-shoot1-004-final-fixed-darekzabrocki.jpg?1507544597)",
+        // ]}
         >
-          <Box ml={10} mt={3}>
+          <Box ml={3} mt={3}>
             <ColorModeSwitcher />
 
             <Logo />

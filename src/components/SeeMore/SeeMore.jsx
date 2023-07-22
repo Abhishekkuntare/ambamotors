@@ -45,10 +45,7 @@ const SeeMore = () => {
   }, [dispatch, stateMessage, error]);
 
   return (
-    <Box
-      pt={10}
-      backgroundImage="url(https://cdnb.artstation.com/p/assets/images/images/025/477/283/large/joel-westman-tctd2-warlords-portfolio-joel-westman-open-world-15.jpg?1585917238)"
-    >
+    <Box pt={10}>
       <Container h={"92vh"}>
         <VStack h="full" justifyContent={"center"} spacing={16}>
           <Heading fontFamily={"Cinzel"} children="Inform now" />{" "}

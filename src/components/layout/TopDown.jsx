@@ -1,20 +1,44 @@
-import React from "react";
 import { Button } from "@chakra-ui/react";
-import { BiUpArrow } from "react-icons/bi";
+import React, { useEffect, useState } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 const TopDown = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const goToBtn = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  const listenToScroll = () => {
+    let heightToHidden = 250;
+    const winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+
+    if (winScroll > heightToHidden) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+  }, []);
   return (
-    <Button
-      zIndex={100}
-      colorScheme={"teal"}
-      position={"fixed"}
-      right={4}
-      bottom={4}
-    >
-      <a href="#" id="upside">
-        <BiUpArrow />
-      </a>
-    </Button>
+    <>
+      {isVisible && (
+        <Button
+          pos={"fixed"}
+          zIndex={100}
+          right={3}
+          bottom={3}
+          onClick={goToBtn}
+          colorScheme={"teal"}
+        >
+          <FaArrowUp />
+        </Button>
+      )}
+    </>
   );
 };
 

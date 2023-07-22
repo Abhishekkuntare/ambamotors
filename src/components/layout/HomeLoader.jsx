@@ -1,13 +1,12 @@
 import { Box, Text, HStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import React from "react";
+import loader from "../../assets/loader.gif";
 
 const HomeLoader = () => {
   return (
     <Box
-      background={
-        "url(https://cdnb.artstation.com/p/assets/images/images/011/391/255/large/nicolas-morlet-comp-truck-noc-front.jpg?1529354675)"
-      }
+      backgroundColor={"#fff"}
       display={"flex"}
       alignItems="center"
       justifyContent={"center"}
@@ -18,6 +17,7 @@ const HomeLoader = () => {
           {" "}
           <HStack>
             <Text
+              color={"black"}
               fontFamily={"Major Mono Display"}
               fontWeight={"extrabold"}
               fontSize={30}

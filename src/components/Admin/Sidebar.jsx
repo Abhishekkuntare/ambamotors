@@ -14,6 +14,7 @@ const Sidebar = () => {
     <VStack
       spacing={8}
       padding={16}
+      mt={100}
       boxShadow={"-2px 0 10px rgba(107,70,193,0.5)"}
     >
       <Link to={"/admin/dashboard"}>

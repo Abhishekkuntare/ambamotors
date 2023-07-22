@@ -40,10 +40,10 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About us</Link>
-            <Link href={"#"}>Blog</Link>
-            <Link href={"#"}>Contact us</Link>
-            <Link href={"#"}>Pricing</Link>
+            <Link href={"/"}>Home</Link>
+            <Link href={"/about"}>About</Link>
+            <Link href={"/contact"}>Contact us</Link>
+            <Link href={"#"}>Emergency</Link>
             <Link href={"#"}>Testimonials</Link>
           </Stack>
           <Stack align={"flex-start"}>

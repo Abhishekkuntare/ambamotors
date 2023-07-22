@@ -28,6 +28,7 @@ import ChangePassword from "./components/Profile/ChangePassword";
 import UpdateProfile from "./components/Profile/UpdateProfile";
 import ResetPassword from "./components/Auth/ResetPassword";
 import ForgotPassword from "./components/Auth/ForgotPassword";
+import SeeMore from "./components/SeeMore/SeeMore";
 
 const App = () => {
   const { isAuthenticated, user, message, error, loading } = useSelector(
@@ -240,6 +241,7 @@ const App = () => {
 
               <Route path="/contact" element={<Contact />} />
               <Route path="/request" element={<Request />} />
+              <Route path="/see_more" element={<SeeMore />} />
               <Route path="/about" element={<About />} />
               <Route path="/howitworks/:id" element={<HowItWorks />} />
               <Route path="*" element={<NotFound />} />

@@ -134,12 +134,6 @@ const Profile = ({ user }) => {
                   src={element.poster}
                 />
                 <HStack>
-                  <Link to={`/course/${element.course}`}>
-                    <Button colorScheme={"teal"} variant="ghost">
-                      Watch Now
-                    </Button>
-                  </Link>
-
                   <Button
                     isLoading={loading}
                     onClick={() => removeFromPlayListHandler(element.course)}
