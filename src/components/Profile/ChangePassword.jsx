@@ -39,8 +39,33 @@ const ChangePassword = () => {
     <>
       <Box
         pt={10}
-        backgroundImage="url(https://cdna.artstation.com/p/assets/images/images/048/877/850/large/james-o-brien-vadim-ignatiev-second-car-dealership-forarstation.jpg?1651152163)"
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        flexDirection={["column", "row"]}
       >
+        <Box mt={[20, 0]}>
+          <video
+            className="home_video"
+            style={{
+              borderRadius: "47% 53% 53% 47% / 48% 49% 51% 52%  ",
+              display: "flex",
+
+              alignItems: "center",
+              justifyContent: "center",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+            width={"70%"}
+            muted={true}
+            loop={true}
+            controls={false}
+            autoPlay={true}
+            src={
+              "https://cdn.dribbble.com/userupload/4018102/file/original-1e433140fdc405d1fa77524987eddbb8.mp4"
+            }
+          />
+        </Box>
         <Container py={"16"} minH="90vh">
           <form onSubmit={submitHandler}>
             <Heading

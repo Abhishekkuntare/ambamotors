@@ -40,7 +40,35 @@ const UpdateProfile = ({ user }) => {
   }, [dispatch, message, error]);
 
   return (
-    <Box backgroundImage="url(https://cdnb.artstation.com/p/assets/images/images/028/658/785/large/angela-sung-pleinairpril30-s.jpg?1595116617)">
+    <Box
+      pt={10}
+      display={"flex"}
+      alignItems={"center"}
+      justifyContent={"space-around"}
+      flexDirection={["column", "row"]}
+    >
+      <Box mt={[20, 0]}>
+        <video
+          className="home_video"
+          style={{
+            borderRadius: "47% 53% 44% 56% / 54% 49% 51% 46%  ",
+            display: "flex",
+
+            alignItems: "center",
+            justifyContent: "center",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+          width={"70%"}
+          muted={true}
+          loop={true}
+          controls={false}
+          autoPlay={true}
+          src={
+            "https://cdn.dribbble.com/userupload/4488419/file/original-b4ba3ed029641da816ebb281ec698ba9.mp4"
+          }
+        />
+      </Box>
       <Container py={"16"} minH="90vh">
         <form onSubmit={submitHandler}>
           <Heading

@@ -4,7 +4,6 @@ import Slider from "../layout/Slider";
 import Testimoni from "../layout/Testimoni";
 import Services from "../Services/Services";
 import HomeCom1 from "./HomeCom1";
-import v1 from "../../assets/videos/v1.mp4";
 
 export default function Home({ params }) {
   return (
@@ -48,7 +47,7 @@ export default function Home({ params }) {
                 marginLeft: "auto",
                 marginRight: "auto",
               }}
-              width={"80%"}
+              width={"90%"}
               muted={true}
               loop={true}
               controls={false}

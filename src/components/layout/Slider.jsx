@@ -41,6 +41,7 @@ const Slider = () => {
               src={
                 "https://cdna.artstation.com/p/assets/images/images/015/430/580/large/filippo-ubertino-teporaneo3low.jpg?1548297170"
               }
+              alt="img"
             />
           </div>
           <div>
@@ -49,6 +50,7 @@ const Slider = () => {
               src={
                 "https://cdnb.artstation.com/p/assets/images/images/028/044/371/large/lyes-hamrani-mercedes-maybach-pink-shop.jpg?1593340834"
               }
+              alt="img"
             />
           </div>
           <div>
@@ -57,6 +59,7 @@ const Slider = () => {
               src={
                 "https://cdnb.artstation.com/p/assets/images/images/051/717/923/large/mirco-burger-tbrender-main-camera-4-fullquality.jpg?1657998116"
               }
+              alt="img"
             />
           </div>
           <div>
@@ -65,6 +68,7 @@ const Slider = () => {
               src={
                 "https://cdnb.artstation.com/p/assets/images/images/041/562/599/large/nahid-mustafazade-3.jpg?1632064184"
               }
+              alt="img"
             />
           </div>
           <div>
@@ -73,6 +77,7 @@ const Slider = () => {
               src={
                 "https://cdnb.artstation.com/p/assets/images/images/006/239/167/large/mikhail-sharov-garage.jpg?1565887843"
               }
+              alt="img"
             />
           </div>
         </Carousel>

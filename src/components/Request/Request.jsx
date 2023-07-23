@@ -47,8 +47,33 @@ const Request = () => {
   return (
     <Box
       pt={10}
-      backgroundImage="url(https://cdnb.artstation.com/p/assets/images/images/025/477/283/large/joel-westman-tctd2-warlords-portfolio-joel-westman-open-world-15.jpg?1585917238)"
+      display={"flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      flexDirection={["column", "row"]}
     >
+      <Box mt={[20, 0]}>
+        <video
+          className="home_video"
+          style={{
+            borderRadius: "47% 53% 30% 70% / 54% 32% 68% 46%  ",
+            display: "flex",
+
+            alignItems: "center",
+            justifyContent: "center",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+          width={"50%"}
+          muted={true}
+          loop={true}
+          controls={false}
+          autoPlay={true}
+          src={
+            "https://cdn.dribbble.com/userupload/2644652/file/original-62b50f66e2b4b1f4c11be784e2448e31.mp4"
+          }
+        />
+      </Box>
       <Container h={"92vh"}>
         <VStack h="full" justifyContent={"center"} spacing={16}>
           <Heading fontFamily={"Cinzel"} children="Emergency" />{" "}

@@ -46,8 +46,33 @@ const Contact = () => {
     <>
       <Box
         pt={10}
-        backgroundImage="url(https://cdna.artstation.com/p/assets/images/images/013/019/846/large/mike-mccain-marooned-post.jpg?1537722932)"
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"space-around"}
+        flexDirection={["column", "row"]}
       >
+        <Box mt={[20, 0]}>
+          <video
+            className="home_video"
+            style={{
+              borderRadius: "47% 53% 44% 56% / 54% 49% 51% 46%  ",
+              display: "flex",
+
+              alignItems: "center",
+              justifyContent: "center",
+              marginLeft: "auto",
+              marginRight: "auto",
+            }}
+            width={"70%"}
+            muted={true}
+            loop={true}
+            controls={false}
+            autoPlay={true}
+            src={
+              "https://cdn.dribbble.com/userupload/6843425/file/original-1f9ca91a949a273a8936662c59c34846.mp4"
+            }
+          />
+        </Box>
         <Container h={"92vh"}>
           <VStack h="full" justifyContent={"center"} spacing={16}>
             <Heading fontFamily={"Cinzel"} children="Contact Us" />{" "}

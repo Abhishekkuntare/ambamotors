@@ -28,7 +28,12 @@ const features = [
 ];
 const Browse_Services = () => {
   return (
-    <Box backgroundImage="url(https://cdnb.artstation.com/p/assets/images/images/007/603/193/large/luciano-neves-main-avenue-0000.jpg?1507253643)">
+    <Box
+      backgroundRepeat={"no-repeat"}
+      width={"full"}
+      backgroundSize={"cover"}
+      backgroundImage="url(https://cdn.dribbble.com/userupload/4097805/file/original-c5c45b077b4e2cedc18c1b42323b3463.png?resize=1200x900)"
+    >
       <Container maxW="6xl" px={{ base: 6, md: 10 }} py={120}>
         <Stack direction={{ base: "column", md: "row" }}>
           <Stack direction="column" spacing={10} justifyContent="center">
@@ -100,7 +105,7 @@ const Browse_Services = () => {
           </Stack>
         </Stack>
       </Container>
-      <Box overflow="hidden">
+      {/* <Box overflow="hidden">
         <svg
           fill={useColorModeValue("#f7fafc", "#171923")}
           width="150%"
@@ -117,7 +122,7 @@ const Browse_Services = () => {
             3V0H0v27.35a600.21 600.21 0 00321.39 29.09z`}
           ></path>
         </svg>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

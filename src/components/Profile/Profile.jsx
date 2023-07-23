@@ -63,7 +63,9 @@ const Profile = ({ user }) => {
   return (
     <Box
       pt={10}
-      backgroundImage="url(https://cdna.artstation.com/p/assets/images/images/035/944/600/large/jenny-mati-petshop-interior02.jpg?1616336873)"
+      backgroundImage="url(https://cdn.dribbble.com/users/15687/screenshots/17302148/media/99c5a5ec1cc72f04e2fcaaf7fc07c31f.png?resize=1000x750&vertical=center)"
+      backgroundRepeat={"no-repeat"}
+      backgroundSize={"cover"}
     >
       <Container minH={"100vh"} maxW="container.lg" py={"20"}>
         <Heading fontFamily={"Cinzel"} children="Profile" m="8" />
@@ -94,18 +96,6 @@ const Profile = ({ user }) => {
               <Text children="Created At" fontWeight={"bold"} />
               <Text children={user.createdAt.split("T")[0]} />
             </HStack>
-            {/* {user.role !== "admin" && (
-              <HStack>
-                <Text children="Subscription" fontWeight={"bold"} />
-                {user.subscription && user.subscription.status === "active" ? (
-                  <Button color={"teal.500"}>Cancel Subsription</Button>
-                ) : (
-                  <Link to="/subscribe">
-                    <Button colorScheme={"teal"}>Subscribe</Button>
-                  </Link>
-                )}
-              </HStack>
-            )} */}
 
             <Stack direction={["column", "row"]} alignItems="center">
               <Link to="/updateprofile">
@@ -118,7 +108,12 @@ const Profile = ({ user }) => {
           </VStack>
         </Stack>
 
-        <Heading fontFamily={"Cinzel"} children="Cart" size={"md"} my="8" />
+        <Heading
+          fontFamily={"Cinzel"}
+          children="Your Work"
+          size={"md"}
+          my="8"
+        />
         {user.playlist.length > 0 && (
           <Stack
             direction={["column", "row"]}

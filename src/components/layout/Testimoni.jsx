@@ -54,6 +54,7 @@ function TestimonialCard(props) {
   const { name, role, content, avatar, index } = props;
   return (
     <Flex
+      key={index}
       boxShadow={"lg"}
       maxW={"640px"}
       direction={{ base: "column-reverse", md: "row" }}
@@ -176,7 +177,7 @@ export default function Testimoni() {
         mx={"auto"}
       >
         {testimonials.map((cardInfo, index) => (
-          <TestimonialCard {...cardInfo} index={index} />
+          <TestimonialCard {...cardInfo} index={index} key={index} />
         ))}
       </SimpleGrid>
       <Box>

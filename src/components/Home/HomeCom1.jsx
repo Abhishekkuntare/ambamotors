@@ -18,7 +18,7 @@ export default function HomeCom1() {
       id: 1,
       title: "Future concept",
       desc: " We have the technology making new advancements, there are several new domains in our Workshop.",
-      img: h1,
+      vide: "https://cdn.dribbble.com/userupload/5840537/file/original-c370acf39e2f4dfce3ff79235629c5cd.mp4",
       color: "yellow.300",
       btnColor: "yellow.300",
       link: "future_concept",
@@ -27,7 +27,7 @@ export default function HomeCom1() {
       id: 2,
       title: "The Big Ideas.",
       desc: "The ideas on fly! with any wast problem but we have the solution to solve that problem.",
-      img: h3,
+      vide: "https://cdn.dribbble.com/userupload/6049812/file/original-02b1c88ea170176bfb452693ea28fb38.mp4",
       color: "red.300",
       btnColor: "red.300",
       link: "the_big_ideas",
@@ -36,7 +36,7 @@ export default function HomeCom1() {
       id: 3,
       title: "Creative Solutions..",
       desc: "We solve any problem with the correction and creative ideas used for find solve the issue you have..",
-      img: h4,
+      vide: "https://cdn.dribbble.com/userupload/8626545/file/original-ca610aeee58e967cd7e3880a109a4e50.mp4",
       color: "blue.300",
       btnColor: "blue.300",
       link: "creative_solution",
@@ -92,17 +92,34 @@ export default function HomeCom1() {
                 <Box
                   position={"relative"}
                   rounded={"2xl"}
-                  boxShadow={"2xl"}
+                  // boxShadow={"2xl"}
                   width={"full"}
                   overflow={"hidden"}
                 >
-                  <Image
+                  {/* <Image
                     alt={"Hero Image"}
                     fit={"cover"}
                     align={"center"}
                     w={"100%"}
                     h={"100%"}
                     src={item.img}
+                  /> */}
+                  <video
+                    className="home_video"
+                    style={{
+                      borderRadius: "4%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginLeft: "auto",
+                      marginRight: "auto",
+                    }}
+                    width={"80%"}
+                    muted={true}
+                    loop={true}
+                    controls={false}
+                    autoPlay={true}
+                    src={item.vide}
                   />
                 </Box>
               </Flex>
